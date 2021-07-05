@@ -1,0 +1,229 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    /* font-family: 'Otomanopee One', sans-serif; */
+    /* font-family: 'Titillium Web', sans-serif; */
+    scroll-behavior: smooth;
+   
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+	font-size: 1rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+.container{
+    display: flex;
+}
+.section-title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+ 
+    font-size: 2rem;
+    /* font-weight: 100; */
+    text-align: center;
+    margin-bottom: 3vh;
+    /* background-color: green; */
+
+}
+.section-title span{
+    color:crimson;
+}
+/* hero section  */
+
+#hero{
+  /* height: 100vh; */
+
+  width: 100%;
+}
+#hero .hero{
+    height: 100vh;
+    background-image: url(./img/hero-bg.png);
+    background-size: cover;
+    background-position:top center;
+    /* align-items: center; */
+    /* margin-left: 10%; */
+    position: relative;
+    z-index: 1;
+
+   
+}
+.hero::after{
+    content: '';
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+
+}
+.hero-id{
+    margin-left: 10vw;
+    padding: 0;
+    margin-top: 30vh;
+   
+   
+
+   
+}
+.hero-id h1{
+    font-size: 2.5rem;
+    margin: 0;
+    width: fit-content;
+    /* font-weight: 300; */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.hero-id .name{
+    color: crimson;
+}
+.cta{
+    text-decoration: none;
+    display: block;
+    margin-top: 15%;
+    width: fit-content;
+    padding: 5px 20px;
+    /* margin-left: 10%; */
+    font-size: 2rem;
+    border: 2px solid  crimson;
+    text-align: center;
+    color: white;
+
+}
+/* end hero section */
+
+/* service section */
+.services{
+    flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#services .service-top{
+   
+   
+    max-width: 500px;
+	margin: 0 auto;
+    /* background-color: yellow; */
+    
+}
+#services .service-bottom{
+     /* display: flex;
+    flex-direction: column;  */
+    display: flex;
+
+    align-items: center;
+    text-align: unset;
+    flex-wrap: wrap;
+  
+    /* justify-content: center; */
+}
+#services .service-item{
+   
+   /* justify-content: center; */
+   /* background-color: red; */
+   flex-basis: 20%;
+	display: flex;
+	align-items:flex-start;
+	justify-content: center;
+	flex-direction: column;
+	/* padding: 30px; */
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	background-size: cover;
+	margin:2%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+    padding: 10px;
+}
+ 
+ 
+
+
+#services .service-bottom .service-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#services .service-item > .icon> img{
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+}
+#services .service-item h2{
+    margin-left: 10%;
+    margin-top: 5%;
+    color: white;
+}
+#services .service-item p{
+    line-height: 1.5rem;
+    margin-left: 10%;
+    text-align: start;
+    color: white;
+    margin-top: 5%;
+   
+}
+
+
+
+/* end of service section */
+
+
+
+/* /* media */
+
+
+@media screen and (max-width:1200px) {
+    #services .service-bottom{
+        align-items: center;
+        justify-content: center;
+    }
+    #services .service-item{
+        flex-basis: 40%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    #services .service-bottom{
+
+    }
+    #services .service-item{
+        display: flex;
+        align-items: flex-start;
+        flex-basis: 80%;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+ /* end of media */
+
+
